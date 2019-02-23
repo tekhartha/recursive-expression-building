@@ -1,4 +1,4 @@
-public class Assn5 {
+public class Reb {
   public static void main(String[] args) {
     String number = args[0];
     int sum = Integer.parseInt(args[1]);
