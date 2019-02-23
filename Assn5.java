@@ -1,4 +1,4 @@
-public class Main {
+public class Assn5 {
   public static void main(String[] args) {
     String number = args[0];
     int sum = Integer.parseInt(args[1]);
@@ -7,8 +7,7 @@ public class Main {
       if (Integer.parseInt(number) == sum) {
         System.out.println(number + "=" + sum);
       }
-    } else { // enter recursive loop - once with original string, another with negative
-             // string
+    } else { // enter recursive loop - once with original string, another with negative string
       build(number, 1, Character.getNumericValue(number.charAt(0)), Character.toString(number.charAt(0)),
           Character.getNumericValue(number.charAt(0)), "", sum, intNumberLength);
       build("-" + number, 2, Character.getNumericValue(number.charAt(0)) * -1,
